@@ -15,7 +15,9 @@ var override = module.exports = function override_ttyWrite(rli) {
     var matchAt, move;
 
     moveCursorBack();
+
     original_ttyWrite.apply(rli, arguments);
+    logln({ line: rli.line, cursor: rli.cursor, char: rli.line[rli.cursor - 1] });
 
     matchAt = Math.max(0, rli.cursor - 3);
     move = matchAt - rli.cursor;
@@ -23,8 +25,5 @@ var override = module.exports = function override_ttyWrite(rli) {
     rli._moveCursor(move);
 
     setTimeout(moveCursorBack, 200);
-
-
-    logln({ line: rli.line, cursor: rli.cursor });
   };
 };
