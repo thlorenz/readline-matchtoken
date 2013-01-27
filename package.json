@@ -1,0 +1,28 @@
+{
+  "name": "readline-matchparens",
+  "version": "0.0.0",
+  "description": "Adds parens matching to nodejs readline.",
+  "main": "readline-matchparens.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/readline-matchparens.git"
+  },
+  "keywords": [
+    "readline",
+    "matchparens",
+    "shortcuts",
+    "console",
+    "keyboard",
+    "keys"
+  ],
+  "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
