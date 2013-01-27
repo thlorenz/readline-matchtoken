@@ -4,6 +4,7 @@
   "description": "Adds parens matching to nodejs readline.",
   "main": "readline-matchparens.js",
   "scripts": {
+    "start": "node ./examples/repl",
     "test": "tap test"
   },
   "repository": {
