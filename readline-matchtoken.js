@@ -1,6 +1,8 @@
 'use strict';
 
-var logln = require('./lib/utl').logln;
+var matchToken = require('match-token')
+  , logln = require('./lib/utl').logln;
+
 
 var override = module.exports = function override_ttyWrite(rli) {
   var original_ttyWrite =  rli._ttyWrite
@@ -16,16 +18,21 @@ var override = module.exports = function override_ttyWrite(rli) {
 
     moveCursorBack();
 
+    var linelen = rli.line.length;
     original_ttyWrite.apply(rli, arguments);
-    logln({ line: rli.line, cursor: rli.cursor, char: rli.line[rli.cursor - 1] });
 
-    matchAt = Math.max(0, rli.cursor - 3);
+    // only visualize match if we just typed it
+    if (rli.line.length <= linelen) return;
+
+    matchAt = matchToken(rli.line, Math.max(rli.cursor -1, 0));
+
+    if (matchAt === -1) return;
+
     move = matchAt - rli.cursor;
     pendingMoveBack = -move;
     rli._moveCursor(move);
 
-    setTimeout(moveCursorBack, 200);
+    setTimeout(moveCursorBack, override.interval);
   };
 };
-
-// Rename to readline-matchtoken
+override.interval = 200;

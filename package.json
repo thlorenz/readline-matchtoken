@@ -20,8 +20,8 @@
   "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "match-token": "~0.1.0"
   }
 }
