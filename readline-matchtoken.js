@@ -27,3 +27,5 @@ var override = module.exports = function override_ttyWrite(rli) {
     setTimeout(moveCursorBack, 200);
   };
 };
+
+// Rename to readline-matchtoken
