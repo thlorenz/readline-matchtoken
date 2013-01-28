@@ -1,10 +1,11 @@
 {
   "name": "readline-matchtoken",
   "version": "0.0.0",
-  "description": "Adds token matching to nodejs readline.",
+  "description": " Adds token matching to nodejs readline and visualizes it by jumping the cursor to it à la emacs.",
   "main": "readline-matchtoken.js",
   "scripts": {
     "start": "node ./examples/repl",
+    "demo": "node ./examples/repl",
     "test": "tap test"
   },
   "repository": {
@@ -15,6 +16,9 @@
     "readline",
     "match",
     "token",
+    "emacs",
+    "cursor",
+    "visualize",
     "console"
   ],
   "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",

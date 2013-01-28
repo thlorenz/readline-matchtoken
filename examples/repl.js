@@ -1,6 +1,6 @@
 'use strict';
 
-var rmb = require('..')
+var rmt = require('..')
   , repl = require('repl');
 
 var r = repl.start({
@@ -9,6 +9,6 @@ var r = repl.start({
     output: process.stdout
   });
 
-rmb(r.rli);
+rmt(r.rli);
 
 r.displayPrompt();
