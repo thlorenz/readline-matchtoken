@@ -1,4 +1,3 @@
-readline-matchparens
-====================
+# readline-matchtoken
 
-Adds parens matching to nodejs readline.
+Adds token matching to nodejs readline.

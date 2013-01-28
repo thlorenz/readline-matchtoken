@@ -1,23 +1,21 @@
 {
-  "name": "readline-matchparens",
+  "name": "readline-matchtoken",
   "version": "0.0.0",
-  "description": "Adds parens matching to nodejs readline.",
-  "main": "readline-matchparens.js",
+  "description": "Adds token matching to nodejs readline.",
+  "main": "readline-matchtoken.js",
   "scripts": {
     "start": "node ./examples/repl",
     "test": "tap test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thlorenz/readline-matchparens.git"
+    "url": "git://github.com/thlorenz/readline-matchtoken.git"
   },
   "keywords": [
     "readline",
-    "matchparens",
-    "shortcuts",
-    "console",
-    "keyboard",
-    "keys"
+    "match",
+    "token",
+    "console"
   ],
   "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
   "license": "MIT",
