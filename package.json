@@ -1,6 +1,6 @@
 {
   "name": "readline-matchtoken",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": " Adds token matching to nodejs readline and visualizes it by jumping the cursor to it à la emacs.",
   "main": "readline-matchtoken.js",
   "scripts": {
