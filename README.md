@@ -1,4 +1,4 @@
-# readline-matchtoken
+# readline-matchtoken [![build status](https://secure.travis-ci.org/thlorenz/readline-matchtoken.png)](http://next.travis-ci.org/thlorenz/readline-matchtoken)
 
 Adds token matching to nodejs readline and visualizes it by jumping the cursor to it à la emacs.
 
