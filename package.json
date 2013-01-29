@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./examples/repl",
     "demo": "node ./examples/repl",
-    "test": "tap test"
+    "test": "node-trap ./test/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,10 @@
   "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "devDependencies": {},
+  "devDependencies": {
+    "readline-testharness": "~0.1.2",
+    "trap": "~0.3.2"
+  },
   "dependencies": {
     "match-token": "~0.1.0"
   }
