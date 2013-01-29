@@ -40,7 +40,7 @@ test('given rli line "(.." and I enter ")" and wait', function (t) {
       function () { 
         t.equal(hns.rli.moveCursor.pop(), undefined, 'keeps cursor there for given interval')
       })
-    , readlineMatchToken.interval - 1
+    , readlineMatchToken.interval / 2
   )
   setTimeout(t.cb(
       function () { 
