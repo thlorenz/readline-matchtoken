@@ -25,8 +25,8 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "readline-testharness": "~0.1.2",
-    "trap": "~0.3.2"
+    "trap": "~0.3.2",
+    "readline-testharness": "~0.2.0"
   },
   "dependencies": {
     "match-token": "~0.1.0"
